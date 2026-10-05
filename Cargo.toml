@@ -4,9 +4,16 @@ description = "Sass (indented syntax) grammar for tree-sitter (appmatter fork wi
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
-repository = "https://github.com/bajrangCoder/tree-sitter-sass"
+repository = "https://github.com/appmatter/tree-sitter-sass"
 build = "bindings/rust/build.rs"
-include = ["bindings/rust/*", "grammar.js", "queries/*", "src/*", "LICENSE"]
+include = [
+    "bindings/rust/*",
+    "examples/*",
+    "grammar.js",
+    "queries/*",
+    "src/*",
+    "LICENSE",
+]
 
 [lib]
 path = "bindings/rust/lib.rs"
@@ -16,3 +23,6 @@ tree-sitter-language = "0.1"
 
 [build-dependencies]
 cc = "1"
+
+[dev-dependencies]
+tree-sitter = "0.25"

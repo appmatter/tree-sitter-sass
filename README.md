@@ -13,3 +13,10 @@ tree-sitter-sass = { git = "https://github.com/appmatter/tree-sitter-sass" }
 ```
 
 This fork adds a thin Rust binding (`bindings/rust`) on top of the upstream grammar so Cargo can depend on it.
+
+
+## Tests
+
+```bash
+cargo test
+```

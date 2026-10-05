@@ -25,3 +25,5 @@ npm-debug.log*
 # Lock files (for publishing)
 package-lock.json
 bun.lockb
+target/
+Cargo.lock
